@@ -135,16 +135,16 @@ footer{
     position: relative;
     ul{
         position: absolute;
-        inset-block-start: -0.85vi;
+        inset-block-start: -40px;
         list-style-type: none;
         li{
             display: inline;
             img{
                 position: absolute;
-                inset-inline-start: 0.1vi;
-                inset-block-start: -0.6vi;
-                width: 40px;
-                height: 40px;
+                inset-inline-start: 0.5vi;
+                inset-block-start: -16px;
+                width: 55px;
+                height: 55px;
             }
             a{
             text-decoration: underline;
@@ -168,6 +168,27 @@ footer{
     img{
         width:1.9em;
         height:1.9em;
+    }
+}
+
+@media (max-width: 1730px) {
+    .previewabout{
+        h2{
+            inset-inline-start: 41.12vi;
+            inset-block-start: 45.5px;
+        }
+    }
+}
+
+@media (max-width: 1625px) {
+    header{
+        .previewabout{
+        h2{
+            position: absolute;
+            inset-inline-start: 40.35vi;
+            inset-block-start: 65.5px;
+        }
+    }
     }
 }
 
