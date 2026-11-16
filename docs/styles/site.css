@@ -37,25 +37,30 @@ header{
     }
 }
     .previewabout{
-        margin-inline-start: 280px;
-        margin-inline-end: 50px;
-        margin-block-start: -54px;
+        margin-inline-start: 49vi;
+        margin-inline-end: 80px;
+        margin-block-start: -64px;
         float: inline-end;
         background-color:oklch(44.7% 0.228 304 / 0.14);
         position: absolute;
         p{
             position: relative;
             padding: 4px;
-            background: linear-gradient(to top, #000000 2%, #F26419);
+            background: linear-gradient(to top, oklch(44.7% 0.228 304 / 0.24) 2%, #F26419);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            line-clamp: 4;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
         }
         h2{
             background-color:  #000;
             position:absolute;
-            inset-inline-start: 735px;
-            inset-block-start: 45px;
+            inset-inline-start: 41.12vi;
+            inset-block-start: 45.5px;
             padding-inline: 4px;
             &:hover{
                 border: 2px solid #F26419;
@@ -167,6 +172,13 @@ footer{
 }
 
 @media (max-width: 768px) {
+    header{
+        nav{
+            a{
+                padding: 8px;
+            }
+        }
+    }
     section{
         >img{
             width:250px;
