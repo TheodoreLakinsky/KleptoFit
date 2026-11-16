@@ -115,6 +115,12 @@ body{
             background-clip: text;
             color: transparent;*/
             }
+            ul{
+                list-style-type: none;
+                li{
+
+                }
+            }
         }
     }
     &::selection{
@@ -215,9 +221,37 @@ footer{
     header{
         nav{
             a{
-                padding: 8px;
+                padding: 1px;
+                font-size: 0.65em;
+            }
+            ul{
+            position: absolute;
+            inset-block-start: -2.4px;
+            inset-inline-start: -15px;
+            }
+            li{
+                padding: 1px;
             }
         }
+        .previewabout{
+        h2{
+            position: absolute;
+            inset-inline-start: 10.35vi;
+            inset-block-start: 65.5px;
+        }
+    }
+    }
+    h1{
+        font-size: 0.74em;
+        margin-block-start: 50px;
+        span{
+        font-size: 0.32em;
+        margin-inline-start: 0.65vi;
+        color:oklch(44.7% 0.228 304 / 0.74);
+}
+    }
+    body{
+        margin-inline: 5px;
     }
     section{
         >img{
@@ -234,6 +268,12 @@ footer{
             >img{
                 width: 200px;
                 height: 200px;
+            }
+        }
+        li{
+            >img{
+                width:35vi;
+                height:35vi;
             }
         }
         border-inline-start: #F26419;
