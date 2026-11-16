@@ -1,18 +1,23 @@
 header{
     color:#F26419;
     text-decoration:none;
+    position: relative;
     nav{
     background: linear-gradient(to right, #000000 82%, #F26419);
     padding: 8px;
-    height: 34px;
+    height: 30px;
+    position: relative;
     ul{
+        position: absolute;
+        inset-block-start: -2.4px;
+        inset-inline-start: 16px;
         list-style-type: none;
         li{
             display: inline;
             img{
                 position: absolute;
-                inset-inline-start: 1.8vi;
-                inset-block-start: 1.1vi;
+                inset-inline-start: 0.75vi;
+                inset-block-start: -0.7vi;
                 width: 60px;
                 height: 60px;
             }
@@ -25,11 +30,38 @@ header{
                 text-decoration: underline;
                 text-decoration-color: oklch(67.4% 0.191 42.9 / 0.54);
                 color:oklch(67.4% 0.191 42.9 / 0.54);
+                text-decoration: none;
                 }
             }
         }
     }
 }
+    .previewabout{
+        margin-inline-start: 280px;
+        margin-inline-end: 50px;
+        margin-block-start: -54px;
+        float: inline-end;
+        background-color:oklch(44.7% 0.228 304 / 0.14);
+        position: absolute;
+        p{
+            position: relative;
+            padding: 4px;
+            background: linear-gradient(to top, #000000 2%, #F26419);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        h2{
+            background-color:  #000;
+            position:absolute;
+            inset-inline-start: 735px;
+            inset-block-start: 45px;
+            padding-inline: 4px;
+            &:hover{
+                border: 2px solid #F26419;
+            }
+        }
+    }
 }
 h1 span{
     font-size: 0.5em;
@@ -41,11 +73,25 @@ h1 span{
 }
 body{
     margin: 14px;
+    div{
+        border-inline-end: 10px solid rgba(242, 100, 45, 0.4%);
     section{
         border: 2px solid #000000;
         background-color:oklch(44.7% 0.228 304 / 0.14);
+        /*background: linear-gradient(to right, #000000 86%, oklch(44.7% 0.228 304 / 0.14));*/
+        /*background: linear-gradient(to right, oklch(44.7% 0.228 304 / 0.14) 92%, #000000);*/
         margin: 10px;
         padding: 20px;
+        div{
+        /*background: linear-gradient(to right, oklch(44.7% 0.228 304 / 0.14) 86%, oklch(44.7% 0.228 304 / 1.14));*/
+            p{
+            /*background: linear-gradient(to top, #000000 30%, #F26419);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;*/
+            }
+        }
+    }
     }
     &::selection{
         background-color: #F26419;
@@ -66,6 +112,8 @@ footer{
     color: #F26419;
     text-align: left;
     margin: 4px;
+    border-block-start: 30px solid oklch(75.128% 0.12848 159.416 / 0.3);
+    border-radius: 0.8%;
 }
 p > a{
     text-decoration-color: #7209B7;
@@ -79,12 +127,19 @@ footer{
     nav{
     background: linear-gradient(to right, #000000 82%, #339966);
     padding: 8px;
+    position: relative;
     ul{
+        position: absolute;
+        inset-block-start: -0.85vi;
         list-style-type: none;
         li{
             display: inline;
             img{
                 position: absolute;
+                inset-inline-start: 0.1vi;
+                inset-block-start: -0.6vi;
+                width: 40px;
+                height: 40px;
             }
             a{
             text-decoration: underline;
@@ -129,6 +184,7 @@ footer{
                 height: 200px;
             }
         }
+        border-inline-start: #F26419;
     }
 }
 
